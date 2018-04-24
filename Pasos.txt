@@ -1,0 +1,18 @@
+Coche: Fabricando Chasis
+Coche: Atornillando Chasis
+Coche: Fabricando Freno
+Coche: Atornillando Freno 1
+Coche: Fabricando Freno
+Coche: Atornillando Freno 2
+Coche: Fabricando Freno
+Coche: Atornillando Freno 3
+Coche: Fabricando Freno
+Coche: Atornillando Freno 4
+Coche: Fabricando Rueda
+Coche: Atornillando Rueda 1
+Coche: Fabricando Rueda
+Coche: Atornillando Rueda 2
+Coche: Fabricando Rueda
+Coche: Atornillando Rueda 3
+Coche: Fabricando Rueda
+Coche: Atornillando Rueda 4

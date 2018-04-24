@@ -1,13 +1,15 @@
 package ejercicoSingletonEscrituraFichero;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Ejecutable {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		Scanner scan = new Scanner(System.in);
 		int menu = -1;
 		PiezasFactory pf = new PiezasFactory();
+		Log log1 = Log.getLog();
 
 		while (menu == -1) {
 			System.out.println(
@@ -17,24 +19,25 @@ public class Ejecutable {
 
 		if (menu == 1) {
 			Coche coche1 = new Coche();
-			coche1.setRueda1(pf.crearRueda(1));
-			coche1.setRueda2(pf.crearRueda(1));
-			coche1.setRueda3(pf.crearRueda(1));
-			coche1.setRueda4(pf.crearRueda(1));
+			coche1.setChasis(pf.crearChasis(1));
 			coche1.setFreno1(pf.crearFreno(1));
 			coche1.setFreno2(pf.crearFreno(1));
 			coche1.setFreno3(pf.crearFreno(1));
 			coche1.setFreno4(pf.crearFreno(1));
-			coche1.setChasis(pf.crearChasis(1));
+			coche1.setRueda1(pf.crearRueda(1));
+			coche1.setRueda2(pf.crearRueda(1));
+			coche1.setRueda3(pf.crearRueda(1));
+			coche1.setRueda4(pf.crearRueda(1));
 		} else if (menu == 2) {
 			Moto moto1 = new Moto();
-			moto1.setRueda1(pf.crearRueda(2));
-			moto1.setRueda2(pf.crearRueda(2));
+			moto1.setChasis(pf.crearChasis(2));
 			moto1.setFreno1(pf.crearFreno(2));
 			moto1.setFreno2(pf.crearFreno(2));
-			moto1.setChasis(pf.crearChasis(2));
+			moto1.setRueda1(pf.crearRueda(2));
+			moto1.setRueda2(pf.crearRueda(2));
 		}
 
+		log1.cerrarFichero();
 		scan.close();
 	}
 
